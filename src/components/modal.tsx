@@ -9,7 +9,7 @@ const Modal: FunctionalComponent<ModalProps> = ({ onClose, value }) => {
   return (
     <section className='wrapper'>
       <div>
-        <h3>The winner is {value}</h3>
+        <h3>{value !== 'No one' ? `The winner is ${value}` : `It's a tie!`}</h3>
         <button onClick={onClose}>Close</button>
       </div>
     </section>

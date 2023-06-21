@@ -34,6 +34,9 @@ const App: FunctionalComponent<{}> = () => {
         setGameEnd("X");
       else if (arr[e[0]] === "O" && arr[e[1]] === "O" && arr[e[2]] === "O")
         setGameEnd("O");
+      else if (!arr.includes('')) {
+        setGameEnd('No one')
+      }
     });
   };
 
